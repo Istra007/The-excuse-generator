@@ -17,6 +17,12 @@ window.onload = function() {
     "during my lunch.",
     "while I was praying."
   ];
-  l;
+  let phrase =
+    who[Math.floor(Math.random() * who.length)] +
+    action[Math.floor(Math.random() * action.length)] +
+    what[Math.floor(Math.random() * what.length)] +
+    when[Math.floor(Math.random() * when.length)];
+  document.write(phrase);
+
   console.log("Hello Rigo from the console!");
 };
